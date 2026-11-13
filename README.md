@@ -38,7 +38,7 @@ Statuses `reference`, `proposal`, `artifact` and `tested` describe workflow. `te
 ## Authorship and development
 Samara supplied the product direction and organization requirements. Puck, OpenAI assistant, wrote this implementation, tests and synthetic fixtures. It is not evidence of unaided coding or professional engineering experience. Owner review and understanding are required before portfolio submission.
 
-This is a new public repository. Its commits document genuine publication stages, not a fabricated long-term development record. Future history should reflect actual work and tests. No application has been submitted. No software license is granted by this repository.
+This is a new public repository. Its commits document genuine publication stages, not a fabricated long-term development record. Future history should reflect actual work and tests. No application has been submitted. Licensed under MIT; see LICENSE.
 
 ## Next real milestones
 1. Validated manifest import with conflict preview.
@@ -48,3 +48,6 @@ This is a new public repository. Its commits document genuine publication stages
 
 ## Cross-project index
 `layered_demo/project_index.json` links fictional OS, game and world projects through stable asset IDs and explicit proposed relationships. It includes status, revision and provenance; it is not an exhaustive real-work inventory. Private integration is separate.
+
+## Start learning the current tool
+See WALKTHROUGH.md for a small guided exercise. Manifest import remains a future milestone, not part of this published version. This repository is an organizer prototype, not an application submission or a claim of engineering experience.
