@@ -1,6 +1,7 @@
 """Copy-only manifest import: read-only preview, then explicit all-or-nothing apply."""
 import argparse
 from collections import Counter
+from contextlib import closing
 import json
 from pathlib import Path
 import re
@@ -23,7 +24,7 @@ def snapshot(workspace):
     # Refuse live/recovery journals rather than create sidecars or read stale WAL data.
     if any(Path(str(db_path) + suffix).exists() for suffix in ('-wal', '-shm', '-journal')):
         raise ValueError('Destination has SQLite sidecars; close its writer before preview')
-    with sqlite3.connect(db_path.as_uri() + '?mode=ro&immutable=1', uri=True) as db:
+    with closing(sqlite3.connect(db_path.as_uri() + '?mode=ro&immutable=1', uri=True)) as db:
         db.row_factory = sqlite3.Row
         rows = {r['id']: dict(r) for r in db.execute('SELECT * FROM assets')}
     return root, rows

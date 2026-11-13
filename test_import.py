@@ -108,3 +108,24 @@ class ImportTests(unittest.TestCase):
         result=import_manifest(self.root/'not-created',self.file,self.root/'missing')
         self.assertEqual(result['summary']['invalid'],2)
         self.assertFalse((self.root/'not-created').exists())
+
+
+class SnapshotConnectionTests(unittest.TestCase):
+    def test_snapshot_closes_connection_on_success_and_error(self):
+        from unittest.mock import MagicMock, patch
+        from manifest_import import snapshot
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'catalog.sqlite3').touch()
+            for fail in (False, True):
+                with self.subTest(query_failure=fail):
+                    db = MagicMock()
+                    db.execute.return_value = []
+                    if fail:
+                        db.execute.side_effect = RuntimeError('synthetic query failure')
+                    with patch('manifest_import.sqlite3.connect', return_value=db):
+                        if fail:
+                            with self.assertRaises(RuntimeError): snapshot(root)
+                        else:
+                            self.assertEqual(snapshot(root)[1], {})
+                    db.close.assert_called_once_with()
