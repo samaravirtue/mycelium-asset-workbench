@@ -1,0 +1,556 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "canonical_geography": false,
+  "assets": [
+    {
+      "asset_id": "seelie-underground",
+      "cell": [
+        0,
+        0
+      ],
+      "layer": "underground",
+      "elevation_band_m": [
+        -20,
+        -1
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "seelie-underground",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "seelie-terrain",
+      "cell": [
+        0,
+        0
+      ],
+      "layer": "terrain",
+      "elevation_band_m": [
+        0,
+        5
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "seelie-terrain",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "seelie-water",
+      "cell": [
+        0,
+        0
+      ],
+      "layer": "water",
+      "elevation_band_m": [
+        0,
+        5
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "seelie-water",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "seelie-flora",
+      "cell": [
+        0,
+        0
+      ],
+      "layer": "flora",
+      "elevation_band_m": [
+        5,
+        60
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "seelie-flora",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "seelie-structures",
+      "cell": [
+        0,
+        0
+      ],
+      "layer": "structures",
+      "elevation_band_m": [
+        5,
+        60
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "seelie-structures",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "seelie-sky",
+      "cell": [
+        0,
+        0
+      ],
+      "layer": "sky",
+      "elevation_band_m": [
+        5,
+        60
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "seelie-sky",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "unseelie-underground",
+      "cell": [
+        1,
+        0
+      ],
+      "layer": "underground",
+      "elevation_band_m": [
+        -20,
+        -1
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "unseelie-underground",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "unseelie-terrain",
+      "cell": [
+        1,
+        0
+      ],
+      "layer": "terrain",
+      "elevation_band_m": [
+        0,
+        5
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "unseelie-terrain",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "unseelie-water",
+      "cell": [
+        1,
+        0
+      ],
+      "layer": "water",
+      "elevation_band_m": [
+        0,
+        5
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "unseelie-water",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "unseelie-flora",
+      "cell": [
+        1,
+        0
+      ],
+      "layer": "flora",
+      "elevation_band_m": [
+        5,
+        60
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "unseelie-flora",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "unseelie-structures",
+      "cell": [
+        1,
+        0
+      ],
+      "layer": "structures",
+      "elevation_band_m": [
+        5,
+        60
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "unseelie-structures",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "unseelie-sky",
+      "cell": [
+        1,
+        0
+      ],
+      "layer": "sky",
+      "elevation_band_m": [
+        5,
+        60
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "unseelie-sky",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "wilds-underground",
+      "cell": [
+        2,
+        0
+      ],
+      "layer": "underground",
+      "elevation_band_m": [
+        -20,
+        -1
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "wilds-underground",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "wilds-terrain",
+      "cell": [
+        2,
+        0
+      ],
+      "layer": "terrain",
+      "elevation_band_m": [
+        0,
+        5
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "wilds-terrain",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "wilds-water",
+      "cell": [
+        2,
+        0
+      ],
+      "layer": "water",
+      "elevation_band_m": [
+        0,
+        5
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "wilds-water",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "wilds-flora",
+      "cell": [
+        2,
+        0
+      ],
+      "layer": "flora",
+      "elevation_band_m": [
+        5,
+        60
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "wilds-flora",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "wilds-structures",
+      "cell": [
+        2,
+        0
+      ],
+      "layer": "structures",
+      "elevation_band_m": [
+        5,
+        60
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "wilds-structures",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "wilds-sky",
+      "cell": [
+        2,
+        0
+      ],
+      "layer": "sky",
+      "elevation_band_m": [
+        5,
+        60
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "wilds-sky",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "underwave-underground",
+      "cell": [
+        3,
+        0
+      ],
+      "layer": "underground",
+      "elevation_band_m": [
+        -20,
+        -1
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "underwave-underground",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "underwave-terrain",
+      "cell": [
+        3,
+        0
+      ],
+      "layer": "terrain",
+      "elevation_band_m": [
+        0,
+        5
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "underwave-terrain",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "underwave-water",
+      "cell": [
+        3,
+        0
+      ],
+      "layer": "water",
+      "elevation_band_m": [
+        0,
+        5
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "underwave-water",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "underwave-flora",
+      "cell": [
+        3,
+        0
+      ],
+      "layer": "flora",
+      "elevation_band_m": [
+        5,
+        60
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "underwave-flora",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "underwave-structures",
+      "cell": [
+        3,
+        0
+      ],
+      "layer": "structures",
+      "elevation_band_m": [
+        5,
+        60
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "underwave-structures",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    },
+    {
+      "asset_id": "underwave-sky",
+      "cell": [
+        3,
+        0
+      ],
+      "layer": "sky",
+      "elevation_band_m": [
+        5,
+        60
+      ],
+      "revision": "demo-v1",
+      "source_asset_id": "underwave-sky",
+      "engine_ready": false,
+      "requires": [
+        "scale review",
+        "collision test",
+        "material conversion"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "from": "wilds-underground",
+      "to": "seelie-underground",
+      "type": "proposed passage",
+      "tested": false
+    },
+    {
+      "from": "wilds-underground",
+      "to": "unseelie-underground",
+      "type": "proposed passage",
+      "tested": false
+    },
+    {
+      "from": "wilds-underground",
+      "to": "underwave-underground",
+      "type": "proposed passage",
+      "tested": false
+    },
+    {
+      "from": "seelie-underground",
+      "to": "seelie-terrain",
+      "type": "surface access",
+      "tested": false
+    },
+    {
+      "from": "seelie-water",
+      "to": "seelie-terrain",
+      "type": "shore boundary",
+      "tested": false
+    },
+    {
+      "from": "unseelie-underground",
+      "to": "unseelie-terrain",
+      "type": "surface access",
+      "tested": false
+    },
+    {
+      "from": "unseelie-water",
+      "to": "unseelie-terrain",
+      "type": "shore boundary",
+      "tested": false
+    },
+    {
+      "from": "wilds-underground",
+      "to": "wilds-terrain",
+      "type": "surface access",
+      "tested": false
+    },
+    {
+      "from": "wilds-water",
+      "to": "wilds-terrain",
+      "type": "shore boundary",
+      "tested": false
+    },
+    {
+      "from": "underwave-underground",
+      "to": "underwave-terrain",
+      "type": "surface access",
+      "tested": false
+    },
+    {
+      "from": "underwave-water",
+      "to": "underwave-terrain",
+      "type": "shore boundary",
+      "tested": false
+    }
+  ],
+  "note": "Planning records only; not loaded or tested in a 3D engine."
+}

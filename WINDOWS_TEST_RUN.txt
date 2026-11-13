@@ -1,0 +1,34 @@
+test_invalid_intake_returns_failure (test_cli.CLITests.test_invalid_intake_returns_failure) ... ok
+test_round_trip_and_corrupt_exit (test_cli.CLITests.test_round_trip_and_corrupt_exit) ... ok
+test_layers_connections_and_provenance (test_layers.LayeredDemoTests.test_layers_connections_and_provenance) ... ok
+test_atomic_json (test_workbench.WorkbenchTests.test_atomic_json) ... ok
+test_audit (test_workbench.WorkbenchTests.test_audit) ... ok
+test_bad_domain (test_workbench.WorkbenchTests.test_bad_domain) ... ok
+test_corrupt_dedup (test_workbench.WorkbenchTests.test_corrupt_dedup) ... ok
+test_corrupt_promotion (test_workbench.WorkbenchTests.test_corrupt_promotion) ... ok
+test_corruption (test_workbench.WorkbenchTests.test_corruption) ... ok
+test_dedup (test_workbench.WorkbenchTests.test_dedup) ... ok
+test_domain_export (test_workbench.WorkbenchTests.test_domain_export) ... ok
+test_duplicate_id_rejected (test_workbench.WorkbenchTests.test_duplicate_id_rejected) ... ok
+test_evidence_and_export (test_workbench.WorkbenchTests.test_evidence_and_export) ... ok
+test_html_escaping (test_workbench.WorkbenchTests.test_html_escaping) ... ok
+test_initial_tested_rejected (test_workbench.WorkbenchTests.test_initial_tested_rejected) ... ok
+test_invalid_layer (test_workbench.WorkbenchTests.test_invalid_layer) ... ok
+test_missing_source (test_workbench.WorkbenchTests.test_missing_source) ... ok
+test_original_preserved (test_workbench.WorkbenchTests.test_original_preserved) ... ok
+test_path_traversal (test_workbench.WorkbenchTests.test_path_traversal) ... ok
+test_persistence (test_workbench.WorkbenchTests.test_persistence) ... ok
+test_reference_not_ready (test_workbench.WorkbenchTests.test_reference_not_ready) ... ok
+test_search_alias (test_workbench.WorkbenchTests.test_search_alias) ... ok
+test_search_terms_and (test_workbench.WorkbenchTests.test_search_terms_and) ... ok
+test_status_requires_evidence (test_workbench.WorkbenchTests.test_status_requires_evidence) ... ok
+test_superseded_excluded (test_workbench.WorkbenchTests.test_superseded_excluded) ... ok
+test_symlink (test_workbench.WorkbenchTests.test_symlink) ... skipped 'Symlink creation unavailable on this operating-system account'
+test_unknown_status (test_workbench.WorkbenchTests.test_unknown_status) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 2.821s
+
+OK (skipped=1)
+Open layered_demo/layers.html or layered_demo/gallery.html. 24 synthetic diagrams; zero production-ready meshes.
+Open layered_demo/layers.html or layered_demo/gallery.html. 24 synthetic diagrams; zero production-ready meshes.

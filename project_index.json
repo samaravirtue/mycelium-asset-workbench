@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "exhaustive_inventory": false,
+  "projects": [
+    {
+      "id": "demo-os",
+      "name": "Synthetic Workspace",
+      "kind": "os",
+      "status": "prototype",
+      "asset_ids": [
+        "wilds-flora",
+        "wilds-sky"
+      ]
+    },
+    {
+      "id": "demo-game",
+      "name": "Synthetic Exploration",
+      "kind": "game",
+      "status": "planning",
+      "asset_ids": [
+        "wilds-terrain",
+        "wilds-underground",
+        "underwave-water"
+      ]
+    },
+    {
+      "id": "demo-world",
+      "name": "Synthetic Realm Atlas",
+      "kind": "world",
+      "status": "planning",
+      "asset_ids": [
+        "seelie-underground",
+        "seelie-terrain",
+        "seelie-water",
+        "seelie-flora",
+        "seelie-structures",
+        "seelie-sky",
+        "unseelie-underground",
+        "unseelie-terrain",
+        "unseelie-water",
+        "unseelie-flora",
+        "unseelie-structures",
+        "unseelie-sky",
+        "wilds-underground",
+        "wilds-terrain",
+        "wilds-water",
+        "wilds-flora",
+        "wilds-structures",
+        "wilds-sky",
+        "underwave-underground",
+        "underwave-terrain",
+        "underwave-water",
+        "underwave-flora",
+        "underwave-structures",
+        "underwave-sky"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "demo-os",
+      "to": "demo-game",
+      "type": "proposed shared assets",
+      "tested": false
+    },
+    {
+      "from": "demo-game",
+      "to": "demo-world",
+      "type": "proposed scene dependency",
+      "tested": false
+    }
+  ],
+  "provenance": {
+    "source": "demo.py fictional fixtures",
+    "revision": "demo-v1"
+  },
+  "note": "Identifiers connect projects without copying private project content. Not a real project inventory."
+}

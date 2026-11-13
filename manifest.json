@@ -1,0 +1,488 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T20:36:41.190207+00:00",
+  "warning": "Tested is a user-declared workflow label, not independent verification or production readiness.",
+  "assets": [
+    {
+      "id": "seelie-flora",
+      "name": "Sun Court / Canopy cluster",
+      "domain": "seelie",
+      "layer": "flora",
+      "status": "reference",
+      "tags": [
+        "flora",
+        "layered",
+        "seelie",
+        "summer",
+        "synthetic"
+      ],
+      "sha256": "480e58eaa68257c64bb5b56edfa4077bf457a77f4d535b475742b2c48f2e2850",
+      "filename": "seelie-flora.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Irregular planting cluster with three size classes; spacing is a layout proposal.",
+      "created": "2026-11-13T20:34:12.710030+00:00",
+      "object_path": "objects/480e58eaa68257c64bb5b56edfa4077bf457a77f4d535b475742b2c48f2e2850"
+    },
+    {
+      "id": "seelie-sky",
+      "name": "Sun Court / Atmosphere study",
+      "domain": "seelie",
+      "layer": "sky",
+      "status": "reference",
+      "tags": [
+        "layered",
+        "seelie",
+        "sky",
+        "summer",
+        "synthetic"
+      ],
+      "sha256": "7c07f82fa9ecba874bd3c233301b8ff710410349fa6bd0b7b589c6c7c845be7d",
+      "filename": "seelie-sky.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Palette reference for sky and fog; no physical sky simulation.",
+      "created": "2026-11-13T20:34:12.733338+00:00",
+      "object_path": "objects/7c07f82fa9ecba874bd3c233301b8ff710410349fa6bd0b7b589c6c7c845be7d"
+    },
+    {
+      "id": "seelie-structures",
+      "name": "Sun Court / Palace entrance module",
+      "domain": "seelie",
+      "layer": "structures",
+      "status": "proposal",
+      "tags": [
+        "layered",
+        "seelie",
+        "structures",
+        "summer",
+        "synthetic"
+      ],
+      "sha256": "3652862a8caaa3f488d32b238a118bafa1ed547f7976021477df021a76e34ede",
+      "filename": "seelie-structures.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Facade, doorway and interior attachment slots; no claim of complete palace geometry.",
+      "created": "2026-11-13T20:34:12.722164+00:00",
+      "object_path": "objects/3652862a8caaa3f488d32b238a118bafa1ed547f7976021477df021a76e34ede"
+    },
+    {
+      "id": "seelie-terrain",
+      "name": "Sun Court / Terrace tile",
+      "domain": "seelie",
+      "layer": "terrain",
+      "status": "proposal",
+      "tags": [
+        "layered",
+        "seelie",
+        "summer",
+        "synthetic",
+        "terrain"
+      ],
+      "sha256": "117d658f4d186ecd67ff9ec9c93018529b799ddfa57044016dfcc16252843c1d",
+      "filename": "seelie-terrain.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "32 x 32 metre proposed tile; east/west seam positions declared, not engine-tested.",
+      "created": "2026-11-13T20:34:12.685238+00:00",
+      "object_path": "objects/117d658f4d186ecd67ff9ec9c93018529b799ddfa57044016dfcc16252843c1d"
+    },
+    {
+      "id": "seelie-underground",
+      "name": "Sun Court / Root chamber",
+      "domain": "seelie",
+      "layer": "underground",
+      "status": "proposal",
+      "tags": [
+        "layered",
+        "seelie",
+        "summer",
+        "synthetic",
+        "underground"
+      ],
+      "sha256": "b3dea352558b62e5b95a55abf44031ea28a3f765afc7e0ee74857d3e83221bc5",
+      "filename": "seelie-underground.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Below-ground chamber connects to surface access shaft; clearance and collision untested.",
+      "created": "2026-11-13T20:34:12.671472+00:00",
+      "object_path": "objects/b3dea352558b62e5b95a55abf44031ea28a3f765afc7e0ee74857d3e83221bc5"
+    },
+    {
+      "id": "seelie-water",
+      "name": "Sun Court / Water boundary",
+      "domain": "seelie",
+      "layer": "water",
+      "status": "reference",
+      "tags": [
+        "layered",
+        "seelie",
+        "summer",
+        "synthetic",
+        "water"
+      ],
+      "sha256": "8acec7cd2b5f322b3b75d6346d0d540f280c278eb91f5e9b4261cdaa4aeef330",
+      "filename": "seelie-water.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Flow boundary and depth zone; water shader and swimming behaviour not implemented.",
+      "created": "2026-11-13T20:34:12.698521+00:00",
+      "object_path": "objects/8acec7cd2b5f322b3b75d6346d0d540f280c278eb91f5e9b4261cdaa4aeef330"
+    },
+    {
+      "id": "underwave-flora",
+      "name": "Underwave / Canopy cluster",
+      "domain": "underwave",
+      "layer": "flora",
+      "status": "reference",
+      "tags": [
+        "flora",
+        "layered",
+        "ocean",
+        "synthetic",
+        "underwave"
+      ],
+      "sha256": "c49317df7b215381119ae3e829c157bf273769e1763a500816136061c1fa2bfa",
+      "filename": "underwave-flora.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Irregular planting cluster with three size classes; spacing is a layout proposal.",
+      "created": "2026-11-13T20:34:12.927729+00:00",
+      "object_path": "objects/c49317df7b215381119ae3e829c157bf273769e1763a500816136061c1fa2bfa"
+    },
+    {
+      "id": "underwave-sky",
+      "name": "Underwave / Atmosphere study",
+      "domain": "underwave",
+      "layer": "sky",
+      "status": "reference",
+      "tags": [
+        "layered",
+        "ocean",
+        "sky",
+        "synthetic",
+        "underwave"
+      ],
+      "sha256": "d04909d48bf47c5ce8df133991afc54938199416f197e81085562073a7dea79b",
+      "filename": "underwave-sky.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Palette reference for sky and fog; no physical sky simulation.",
+      "created": "2026-11-13T20:34:12.950318+00:00",
+      "object_path": "objects/d04909d48bf47c5ce8df133991afc54938199416f197e81085562073a7dea79b"
+    },
+    {
+      "id": "underwave-structures",
+      "name": "Underwave / Palace entrance module",
+      "domain": "underwave",
+      "layer": "structures",
+      "status": "proposal",
+      "tags": [
+        "layered",
+        "ocean",
+        "structures",
+        "synthetic",
+        "underwave"
+      ],
+      "sha256": "699e06c925ecd0fd3434d91d5923a4b76a7583a7edaeb6dec90fe70625bc3ff7",
+      "filename": "underwave-structures.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Facade, doorway and interior attachment slots; no claim of complete palace geometry.",
+      "created": "2026-11-13T20:34:12.939385+00:00",
+      "object_path": "objects/699e06c925ecd0fd3434d91d5923a4b76a7583a7edaeb6dec90fe70625bc3ff7"
+    },
+    {
+      "id": "underwave-terrain",
+      "name": "Underwave / Terrace tile",
+      "domain": "underwave",
+      "layer": "terrain",
+      "status": "proposal",
+      "tags": [
+        "layered",
+        "ocean",
+        "synthetic",
+        "terrain",
+        "underwave"
+      ],
+      "sha256": "46ff8aabf0e632d9db869e0ade8d9b72639c92966ec8f6cb4ca9370f60708c02",
+      "filename": "underwave-terrain.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "32 x 32 metre proposed tile; east/west seam positions declared, not engine-tested.",
+      "created": "2026-11-13T20:34:12.903411+00:00",
+      "object_path": "objects/46ff8aabf0e632d9db869e0ade8d9b72639c92966ec8f6cb4ca9370f60708c02"
+    },
+    {
+      "id": "underwave-underground",
+      "name": "Underwave / Root chamber",
+      "domain": "underwave",
+      "layer": "underground",
+      "status": "proposal",
+      "tags": [
+        "layered",
+        "ocean",
+        "synthetic",
+        "underground",
+        "underwave"
+      ],
+      "sha256": "0e5ab04c1aa63156c6ce9a142fa3878fbffba03c9012a37499c13cbe865b5ea3",
+      "filename": "underwave-underground.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Below-ground chamber connects to surface access shaft; clearance and collision untested.",
+      "created": "2026-11-13T20:34:12.887882+00:00",
+      "object_path": "objects/0e5ab04c1aa63156c6ce9a142fa3878fbffba03c9012a37499c13cbe865b5ea3"
+    },
+    {
+      "id": "underwave-water",
+      "name": "Underwave / Water boundary",
+      "domain": "underwave",
+      "layer": "water",
+      "status": "reference",
+      "tags": [
+        "layered",
+        "ocean",
+        "synthetic",
+        "underwave",
+        "water"
+      ],
+      "sha256": "feecc5ea2c16460c6b654fa3db4b2ee3ca4332031445152b695467bff181dc18",
+      "filename": "underwave-water.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Flow boundary and depth zone; water shader and swimming behaviour not implemented.",
+      "created": "2026-11-13T20:34:12.915669+00:00",
+      "object_path": "objects/feecc5ea2c16460c6b654fa3db4b2ee3ca4332031445152b695467bff181dc18"
+    },
+    {
+      "id": "unseelie-flora",
+      "name": "Frost Court / Canopy cluster",
+      "domain": "unseelie",
+      "layer": "flora",
+      "status": "reference",
+      "tags": [
+        "flora",
+        "layered",
+        "synthetic",
+        "unseelie",
+        "winter"
+      ],
+      "sha256": "1fd84302937ecdc312ef32fed0e645ea69d684103ddccfafb8b023bdef370054",
+      "filename": "unseelie-flora.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Irregular planting cluster with three size classes; spacing is a layout proposal.",
+      "created": "2026-11-13T20:34:12.778051+00:00",
+      "object_path": "objects/1fd84302937ecdc312ef32fed0e645ea69d684103ddccfafb8b023bdef370054"
+    },
+    {
+      "id": "unseelie-sky",
+      "name": "Frost Court / Atmosphere study",
+      "domain": "unseelie",
+      "layer": "sky",
+      "status": "reference",
+      "tags": [
+        "layered",
+        "sky",
+        "synthetic",
+        "unseelie",
+        "winter"
+      ],
+      "sha256": "8dc2043859e569120f6fca8a0ac2fa72dc2abbb86addc0e5c773ade0059803cb",
+      "filename": "unseelie-sky.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Palette reference for sky and fog; no physical sky simulation.",
+      "created": "2026-11-13T20:34:12.802827+00:00",
+      "object_path": "objects/8dc2043859e569120f6fca8a0ac2fa72dc2abbb86addc0e5c773ade0059803cb"
+    },
+    {
+      "id": "unseelie-structures",
+      "name": "Frost Court / Palace entrance module",
+      "domain": "unseelie",
+      "layer": "structures",
+      "status": "proposal",
+      "tags": [
+        "layered",
+        "structures",
+        "synthetic",
+        "unseelie",
+        "winter"
+      ],
+      "sha256": "d3b15222cdc553d0e903d0fd37d2291ef6706396055130fdcdd8225f202358bb",
+      "filename": "unseelie-structures.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Facade, doorway and interior attachment slots; no claim of complete palace geometry.",
+      "created": "2026-11-13T20:34:12.790727+00:00",
+      "object_path": "objects/d3b15222cdc553d0e903d0fd37d2291ef6706396055130fdcdd8225f202358bb"
+    },
+    {
+      "id": "unseelie-terrain",
+      "name": "Frost Court / Terrace tile",
+      "domain": "unseelie",
+      "layer": "terrain",
+      "status": "proposal",
+      "tags": [
+        "layered",
+        "synthetic",
+        "terrain",
+        "unseelie",
+        "winter"
+      ],
+      "sha256": "f6d486e523733f043467f9dc19900dc4106d2a21f4d9a9ff07f4022e6a2e4a17",
+      "filename": "unseelie-terrain.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "32 x 32 metre proposed tile; east/west seam positions declared, not engine-tested.",
+      "created": "2026-11-13T20:34:12.754731+00:00",
+      "object_path": "objects/f6d486e523733f043467f9dc19900dc4106d2a21f4d9a9ff07f4022e6a2e4a17"
+    },
+    {
+      "id": "unseelie-underground",
+      "name": "Frost Court / Root chamber",
+      "domain": "unseelie",
+      "layer": "underground",
+      "status": "proposal",
+      "tags": [
+        "layered",
+        "synthetic",
+        "underground",
+        "unseelie",
+        "winter"
+      ],
+      "sha256": "1a935ce710d0f015dbfa0604be35bbafcdad16b66c3e23fb57d0e4de7aef274a",
+      "filename": "unseelie-underground.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Below-ground chamber connects to surface access shaft; clearance and collision untested.",
+      "created": "2026-11-13T20:34:12.744369+00:00",
+      "object_path": "objects/1a935ce710d0f015dbfa0604be35bbafcdad16b66c3e23fb57d0e4de7aef274a"
+    },
+    {
+      "id": "unseelie-water",
+      "name": "Frost Court / Water boundary",
+      "domain": "unseelie",
+      "layer": "water",
+      "status": "reference",
+      "tags": [
+        "layered",
+        "synthetic",
+        "unseelie",
+        "water",
+        "winter"
+      ],
+      "sha256": "4946ba41bef0a230fc5f5602d7ec408bb94ccf0b87937d9d20e2deb8bc153c32",
+      "filename": "unseelie-water.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Flow boundary and depth zone; water shader and swimming behaviour not implemented.",
+      "created": "2026-11-13T20:34:12.766239+00:00",
+      "object_path": "objects/4946ba41bef0a230fc5f5602d7ec408bb94ccf0b87937d9d20e2deb8bc153c32"
+    },
+    {
+      "id": "wilds-flora",
+      "name": "Wild Network / Canopy cluster",
+      "domain": "wilds",
+      "layer": "flora",
+      "status": "reference",
+      "tags": [
+        "flora",
+        "layered",
+        "network",
+        "synthetic",
+        "wilds"
+      ],
+      "sha256": "013a4ac67860f372a9d5875d41225770845d24c7d6e1790fb635544d5bb9f82b",
+      "filename": "wilds-flora.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Irregular planting cluster with three size classes; spacing is a layout proposal.",
+      "created": "2026-11-13T20:34:12.849908+00:00",
+      "object_path": "objects/013a4ac67860f372a9d5875d41225770845d24c7d6e1790fb635544d5bb9f82b"
+    },
+    {
+      "id": "wilds-sky",
+      "name": "Wild Network / Atmosphere study",
+      "domain": "wilds",
+      "layer": "sky",
+      "status": "reference",
+      "tags": [
+        "layered",
+        "network",
+        "sky",
+        "synthetic",
+        "wilds"
+      ],
+      "sha256": "89628160704a7d788740159de23f42db3893e310aca315c4cb29c7de62daaafe",
+      "filename": "wilds-sky.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Palette reference for sky and fog; no physical sky simulation.",
+      "created": "2026-11-13T20:34:12.874927+00:00",
+      "object_path": "objects/89628160704a7d788740159de23f42db3893e310aca315c4cb29c7de62daaafe"
+    },
+    {
+      "id": "wilds-structures",
+      "name": "Wild Network / Palace entrance module",
+      "domain": "wilds",
+      "layer": "structures",
+      "status": "proposal",
+      "tags": [
+        "layered",
+        "network",
+        "structures",
+        "synthetic",
+        "wilds"
+      ],
+      "sha256": "d505cd1361a65a31ad13d2c099a82f42d342d33cea92440dc77e4ae3c365ad38",
+      "filename": "wilds-structures.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Facade, doorway and interior attachment slots; no claim of complete palace geometry.",
+      "created": "2026-11-13T20:34:12.862277+00:00",
+      "object_path": "objects/d505cd1361a65a31ad13d2c099a82f42d342d33cea92440dc77e4ae3c365ad38"
+    },
+    {
+      "id": "wilds-terrain",
+      "name": "Wild Network / Terrace tile",
+      "domain": "wilds",
+      "layer": "terrain",
+      "status": "proposal",
+      "tags": [
+        "layered",
+        "network",
+        "synthetic",
+        "terrain",
+        "wilds"
+      ],
+      "sha256": "2e28cc62d21fd4b6801a2f7185bb506aa84467bb3d03adc9a300b1d746a76cac",
+      "filename": "wilds-terrain.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "32 x 32 metre proposed tile; east/west seam positions declared, not engine-tested.",
+      "created": "2026-11-13T20:34:12.826462+00:00",
+      "object_path": "objects/2e28cc62d21fd4b6801a2f7185bb506aa84467bb3d03adc9a300b1d746a76cac"
+    },
+    {
+      "id": "wilds-underground",
+      "name": "Wild Network / Root chamber",
+      "domain": "wilds",
+      "layer": "underground",
+      "status": "proposal",
+      "tags": [
+        "layered",
+        "network",
+        "synthetic",
+        "underground",
+        "wilds"
+      ],
+      "sha256": "52c84839dd11073b43dfb48c9198882fca9b11b066f9ff758ba4084d2afbf569",
+      "filename": "wilds-underground.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Below-ground chamber connects to surface access shaft; clearance and collision untested.",
+      "created": "2026-11-13T20:34:12.814959+00:00",
+      "object_path": "objects/52c84839dd11073b43dfb48c9198882fca9b11b066f9ff758ba4084d2afbf569"
+    },
+    {
+      "id": "wilds-water",
+      "name": "Wild Network / Water boundary",
+      "domain": "wilds",
+      "layer": "water",
+      "status": "reference",
+      "tags": [
+        "layered",
+        "network",
+        "synthetic",
+        "water",
+        "wilds"
+      ],
+      "sha256": "d4f39930269d7b937a84d12d2d8519144b2fd31d2ade6952d4b81af47064e76e",
+      "filename": "wilds-water.svg",
+      "source": "synthetic:demo.py procedural diagram",
+      "note": "Flow boundary and depth zone; water shader and swimming behaviour not implemented.",
+      "created": "2026-11-13T20:34:12.838531+00:00",
+      "object_path": "objects/d4f39930269d7b937a84d12d2d8519144b2fd31d2ade6952d4b81af47064e76e"
+    }
+  ],
+  "checks": []
+}
