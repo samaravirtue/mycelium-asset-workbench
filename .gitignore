@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+local_catalog/
+*.sqlite3
+*.sqlite3-*
+.env
+.env.*
