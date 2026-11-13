@@ -1,0 +1,51 @@
+test_invalid_intake_returns_failure (test_cli.CLITests.test_invalid_intake_returns_failure) ... ok
+test_round_trip_and_corrupt_exit (test_cli.CLITests.test_round_trip_and_corrupt_exit) ... ok
+test_absent_workspace_preview_no_artifacts (test_import.ImportTests.test_absent_workspace_preview_no_artifacts) ... ok
+test_all_verdicts_and_no_partial_apply (test_import.ImportTests.test_all_verdicts_and_no_partial_apply) ... ok
+test_apply_copies_and_audits (test_import.ImportTests.test_apply_copies_and_audits) ... ok
+test_batch_duplicate_rejected_before_copy (test_import.ImportTests.test_batch_duplicate_rejected_before_copy) ... ok
+test_cli_preview_absent_workspace (test_import.ImportTests.test_cli_preview_absent_workspace) ... ok
+test_corrupt_object_rejected (test_import.ImportTests.test_corrupt_object_rejected) ... ok
+test_duplicate_conflict_no_mutation (test_import.ImportTests.test_duplicate_conflict_no_mutation) ... ok
+test_duplicate_marks_both_rows (test_import.ImportTests.test_duplicate_marks_both_rows) ... ok
+test_existing_preview_and_skip_preserve_every_byte (test_import.ImportTests.test_existing_preview_and_skip_preserve_every_byte) ... ok
+test_missing_object_blocks_preview_and_apply (test_import.ImportTests.test_missing_object_blocks_preview_and_apply) ... ok
+test_preview_no_rows_or_objects (test_import.ImportTests.test_preview_no_rows_or_objects) ... ok
+test_same_id_different_bytes_blocks_preview_and_apply (test_import.ImportTests.test_same_id_different_bytes_blocks_preview_and_apply) ... ok
+test_schema_rejected (test_import.ImportTests.test_schema_rejected) ... ok
+test_skip_keeps_local_test_status_and_metadata (test_import.ImportTests.test_skip_keeps_local_test_status_and_metadata) ... ok
+test_source_missing_directory_reports_every_row (test_import.ImportTests.test_source_missing_directory_reports_every_row) ... ok
+test_tested_is_downgraded (test_import.ImportTests.test_tested_is_downgraded) ... ok
+test_traversal_and_hash_rejected (test_import.ImportTests.test_traversal_and_hash_rejected) ... ok
+test_layers_connections_and_provenance (test_layers.LayeredDemoTests.test_layers_connections_and_provenance) ... ok
+test_atomic_json (test_workbench.WorkbenchTests.test_atomic_json) ... ok
+test_audit (test_workbench.WorkbenchTests.test_audit) ... ok
+test_bad_domain (test_workbench.WorkbenchTests.test_bad_domain) ... ok
+test_corrupt_dedup (test_workbench.WorkbenchTests.test_corrupt_dedup) ... ok
+test_corrupt_promotion (test_workbench.WorkbenchTests.test_corrupt_promotion) ... ok
+test_corruption (test_workbench.WorkbenchTests.test_corruption) ... ok
+test_dedup (test_workbench.WorkbenchTests.test_dedup) ... ok
+test_domain_export (test_workbench.WorkbenchTests.test_domain_export) ... ok
+test_duplicate_id_rejected (test_workbench.WorkbenchTests.test_duplicate_id_rejected) ... ok
+test_evidence_and_export (test_workbench.WorkbenchTests.test_evidence_and_export) ... ok
+test_html_escaping (test_workbench.WorkbenchTests.test_html_escaping) ... ok
+test_initial_tested_rejected (test_workbench.WorkbenchTests.test_initial_tested_rejected) ... ok
+test_invalid_layer (test_workbench.WorkbenchTests.test_invalid_layer) ... ok
+test_missing_source (test_workbench.WorkbenchTests.test_missing_source) ... ok
+test_original_preserved (test_workbench.WorkbenchTests.test_original_preserved) ... ok
+test_path_traversal (test_workbench.WorkbenchTests.test_path_traversal) ... ok
+test_persistence (test_workbench.WorkbenchTests.test_persistence) ... ok
+test_reference_not_ready (test_workbench.WorkbenchTests.test_reference_not_ready) ... ok
+test_search_alias (test_workbench.WorkbenchTests.test_search_alias) ... ok
+test_search_terms_and (test_workbench.WorkbenchTests.test_search_terms_and) ... ok
+test_status_requires_evidence (test_workbench.WorkbenchTests.test_status_requires_evidence) ... ok
+test_superseded_excluded (test_workbench.WorkbenchTests.test_superseded_excluded) ... ok
+test_symlink (test_workbench.WorkbenchTests.test_symlink) ... ok
+test_unknown_status (test_workbench.WorkbenchTests.test_unknown_status) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.415s
+
+OK
+Open layered_demo/layers.html or layered_demo/gallery.html. 24 synthetic diagrams; zero production-ready meshes.
+Open layered_demo/layers.html or layered_demo/gallery.html. 24 synthetic diagrams; zero production-ready meshes.
