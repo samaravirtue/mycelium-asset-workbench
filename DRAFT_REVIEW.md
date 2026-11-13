@@ -1,18 +1,32 @@
-# DRAFT: manifest import for joint review
+# Manifest import draft, review round 2
 
-Not merged into main. This is a review draft, not a completed milestone. Only fictional test fixtures are used.
+Status: draft branch only, not merged or production-ready.
 
-## Reproduce
+## Changes for review
+- Preview lists each asset with `add`, `skip-identical`, `conflict`, or `invalid`, plus reasons, counts, and `can_apply`.
+- Same existing ID and verified bytes skips without modifying metadata, status, events, or objects.
+- Same ID and different bytes conflicts. Duplicate IDs within one input manifest are conflicts (even when identical), avoiding ambiguous metadata selection.
+- Invalid source entries do not hide later entries. Invalid top-level schema or unreadable destination remains a whole-request failure.
+- CLI preview passes the workspace path, never initializes Catalog, and creates no destination directory or database. Existing databases are opened read-only/immutable; SQLite sidecars cause refusal rather than recovery/sidecar writes.
+- Apply recomputes validation. Any conflict/invalid blocks the whole batch. Tested source claims are downgraded on added assets, not on skipped local assets.
+
+## Try it
+```sh
+python -m unittest discover -v
+python demo.py
+python manifest_import.py layered_demo/manifest.json --objects-root layered_demo/catalog --workspace disposable_import
+# Verify disposable_import still does not exist. Then explicitly apply:
+python manifest_import.py layered_demo/manifest.json --objects-root layered_demo/catalog --workspace disposable_import --apply
+python manifest_import.py layered_demo/manifest.json --objects-root layered_demo/catalog --workspace disposable_import
 ```
-python -m unittest test_import -v
-```
-Ten importer tests cover preview/no copied objects, copy/audit, duplicate-ID rejection, batch rejection, path traversal, corrupt objects, tested-status downgrade, schema rejection, same ID with different bytes and missing source objects.
+The final preview should say 24 skip-identical and zero add/conflict/invalid.
 
-## Requested conflict cases
-- Same ID with different bytes: both preview and apply refuse with `Conflicting asset ID: sample-v1`. The existing destination hash and object stay unchanged.
-- Missing object: both refuse with `Unsafe/missing source object`. Destination remains empty.
+## Verified in this round
+44 tests pass on Linux. Tests cover all four verdicts in one batch, both duplicate rows marked, absent-workspace CLI preview, byte/mtime preservation of existing destination during preview and identical apply, missing sources, same-ID/different-bytes conflict, no partial apply on invalid batch, and retained local tested metadata. These tests use synthetic files only.
 
-## Honest gaps for review
-The current preview fails at the first conflict; it does NOT yet produce a complete per-asset conflict list or a same-ID/same-bytes vs different-bytes comparison. It offers no skip/rename/overwrite resolution. Preview creates an empty destination SQLite workspace, although it adds no rows or copied objects. Database changes are transactional, but an I/O failure can leave unreferenced copied objects. Concurrent filesystem changes/writers are not fully hardened. Exception handling and malformed-manifest coverage need further review. Imported tested claims are downgraded to unverified; source test evidence is not imported as independently verified evidence.
-
-Discuss these behaviors before calling the milestone done. Do not use on valuable/private source material yet. Main remains the existing organizer. No application is submitted, and AI authorship remains as disclosed in README.
+## Still limited
+- No rename/overwrite/resolution choices, GUI, or engine adapter.
+- Identical means same ID and object bytes, not metadata equality; local metadata wins explicitly.
+- Preview intentionally refuses SQLite sidecars; do not use against a concurrently edited workspace. No full adversarial multi-process/filesystem-race guarantee.
+- Database writes roll back, but disk failure after copying can leave unreferenced object files or an initialized empty destination. Filesystem and SQLite are not one atomic transaction. Originals remain untouched.
+- Existing legacy callers that construct Catalog themselves already create their workspace; use a path for side-effect-free preview.
