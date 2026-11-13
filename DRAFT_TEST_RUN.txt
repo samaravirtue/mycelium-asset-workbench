@@ -1,0 +1,15 @@
+test_apply_copies_and_audits (test_import.ImportTests.test_apply_copies_and_audits) ... ok
+test_batch_duplicate_rejected_before_copy (test_import.ImportTests.test_batch_duplicate_rejected_before_copy) ... ok
+test_corrupt_object_rejected (test_import.ImportTests.test_corrupt_object_rejected) ... ok
+test_duplicate_conflict_no_mutation (test_import.ImportTests.test_duplicate_conflict_no_mutation) ... ok
+test_missing_object_blocks_preview_and_apply (test_import.ImportTests.test_missing_object_blocks_preview_and_apply) ... ok
+test_preview_no_rows_or_objects (test_import.ImportTests.test_preview_no_rows_or_objects) ... ok
+test_same_id_different_bytes_blocks_preview_and_apply (test_import.ImportTests.test_same_id_different_bytes_blocks_preview_and_apply) ... ok
+test_schema_rejected (test_import.ImportTests.test_schema_rejected) ... ok
+test_tested_is_downgraded (test_import.ImportTests.test_tested_is_downgraded) ... ok
+test_traversal_and_hash_rejected (test_import.ImportTests.test_traversal_and_hash_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.747s
+
+OK
