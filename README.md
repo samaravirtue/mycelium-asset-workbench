@@ -55,10 +55,10 @@ Samara supplied the product direction and organization requirements. Puck, OpenA
 This is a new public repository. Its commits document genuine publication stages, not a fabricated long-term development record. Future history should reflect actual work and tests. No application has been submitted. Licensed under MIT; see LICENSE.
 
 ## Next real milestones
-1. Validated manifest import with conflict preview ? merged into main as PR #1 (`3b2dc6a`).
-2. Editable local UI and accessible thumbnails ? future.
-3. Backup/restore ? implemented and reviewed as the candidate described above. Schema migration and its tests ? future.
-4. A Godot adapter tested using synthetic geometry, separately from this planning schema ? future.
+1. Validated manifest import with conflict preview - merged into main as PR #1 (`3b2dc6a`).
+2. Editable local UI and accessible thumbnails - future.
+3. Backup/restore - implemented and reviewed as the candidate described above. Schema migration and its tests - future.
+4. A Godot adapter tested using synthetic geometry, separately from this planning schema - future.
 
 ## Cross-project index
 `layered_demo/project_index.json` links fictional OS, game and world projects through stable asset IDs and explicit proposed relationships. It includes status, revision and provenance; it is not an exhaustive real-work inventory. Private integration is separate.
